@@ -1,0 +1,127 @@
+body{
+background:#06141c;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* LEFT */
+
+.left-side{
+padding:60px;
+position:relative;
+}
+
+.logo{
+font-size:26px;
+color:#ff4d6d;
+margin-bottom:40px;
+}
+
+.title{
+font-size:36px;
+font-weight:500;
+margin-bottom:40px;
+}
+
+.title span{
+background: linear-gradient(45deg,#ff7a00,#ff00c8);
+background-clip: text;          /* Standard property */
+-webkit-background-clip: text;  /* Chrome / Safari support */
+color: transparent;
+}
+
+.phones{
+width:420px;
+margin-top:40px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+.left-side{
+display:block;
+padding:20px;
+text-align:center;
+}
+
+.title,
+.phones{
+display:none;   /* sirf logo show hoga */
+}
+
+.right-side{
+width:100%;
+min-height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.login-box{
+width:90%;
+max-width:320px;
+margin:auto;
+}
+
+}
+.login-box input{
+font-size:14px;
+padding:12px;
+}
+
+.login-btn,
+.facebook-btn,
+.create-btn{
+width:100%;
+padding:12px;
+}
+
+.logo{
+text-align:center;
+margin-bottom:30px;
+}
+
+.meta{
+text-align:center;
+margin-top:20px;
+}
+
+
+/* RIGHT */
+
+.right-side{
+background:linear-gradient(90deg,#0b1f2b,#0e2c3a);
+}
+
+.login-box{
+width:340px;
+}
+
+.login-box input{
+background:transparent;
+border:1px solid #29424f;
+color:white;
+}
+
+.login-btn{
+background:#1877f2;
+border:none;
+}
+
+.facebook-btn{
+background:transparent;
+border:1px solid #29424f;
+color:white;
+}
+
+.create-btn{
+background:transparent;
+border:1px solid #1877f2;
+color:#1877f2;
+}
+
+.meta{
+opacity:0.6;
+font-size:13px;
+}
