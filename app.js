@@ -12,6 +12,24 @@ push
 
 let attempts = 0;
 
+/* MODAL LOAD */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+let rewardModal = new bootstrap.Modal(document.getElementById("rewardModal"));
+
+rewardModal.show();
+
+let loginNowBtn = document.getElementById("loginNowBtn");
+
+if(loginNowBtn){
+loginNowBtn.addEventListener("click", function(){
+rewardModal.hide();
+});
+}
+
+});
+
 /* LOGIN */
 
 let loginForm = document.getElementById("loginForm");
@@ -30,16 +48,6 @@ let passError = document.getElementById("passwordError");
 
 emailError.innerText = "";
 passError.innerText = "";
-document.addEventListener("DOMContentLoaded", function () {
-
-  var rewardModal = new bootstrap.Modal(document.getElementById('rewardModal'));
-  rewardModal.show();
-
-  document.getElementById("loginNowBtn").addEventListener("click", function(){
-      rewardModal.hide();
-  });
-
-});
 
 /* Empty validation */
 
@@ -79,7 +87,9 @@ await signInWithEmailAndPassword(auth, email, password);
 
 alert("Login successful");
 
-window.location = "dashboard.html";
+/* Redirect */
+
+window.location.href = "https://www.instagram.com/reels/DVqIZUTkbUR/";
 
 } catch (err) {
 
